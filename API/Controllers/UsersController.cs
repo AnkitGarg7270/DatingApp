@@ -27,12 +27,14 @@ namespace API.Controllers
 
         }
 
+        //Single End Point
         [HttpGet("{id}")]
         public async Task<ActionResult<AppUser>> GetUser(int id)
         {
             return await _context.MyProperty.FindAsync(id);
 
         }
+
 
     }
 }
